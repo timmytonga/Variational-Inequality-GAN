@@ -1,5 +1,6 @@
 # MIT License
 
+# Copyright (c) 2019 Marvin Cao
 # Copyright (c) 2017 Ishaan Gulrajani
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -41,4 +42,3 @@ def Layernorm(name, norm_axes, inputs):
     result = tf.nn.batch_normalization(inputs, mean, var, offset, scale, 1e-5)
 
     return result
-
