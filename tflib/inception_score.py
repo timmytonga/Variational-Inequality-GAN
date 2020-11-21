@@ -11,13 +11,15 @@ import tarfile
 
 import numpy as np
 from six.moves import urllib
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import glob
 import math
 import sys
 
 import torch
 import torch.autograd as autograd
+
+tf.disable_v2_behavior()
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
